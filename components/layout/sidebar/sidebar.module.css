@@ -1,0 +1,25 @@
+.sidebar {
+  margin: 5px;
+  width: 100%;
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: 72px 1fr fit-content(72px);
+}
+
+.sidebar_brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar_navigation {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.sidebar_utilities {
+    align-items: baseline;
+    padding-bottom: 1rem;
+}

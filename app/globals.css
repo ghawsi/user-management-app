@@ -1,0 +1,20 @@
+* {
+  font-family: "saria";
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-color: #f4f3f8;
+  min-height: 100svh;
+  display: grid;
+  grid-template-columns: 72px 1fr;
+
+}
+
+body > * {
+  margin: 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
