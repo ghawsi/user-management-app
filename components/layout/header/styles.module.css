@@ -1,0 +1,78 @@
+.header {
+  grid-area: nav;
+  border-radius: 5px;
+  background-color: var(--container-low);
+  display: flex;
+  align-items: center;
+  padding: 0 32px 0 32px;
+  font-size: 32px;
+  color: #747780;
+  z-index: 10;
+  /* min-height: 60px; */
+}
+
+.account {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #c4c6d0;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.accountPopup {
+  position: fixed;
+  width: 370px;
+  height: 480px;
+  background-color: #d9e2fc;
+  top: 5rem;
+  right: 0.6rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+.accountPopup .name {
+  color: #143363;
+  margin-bottom: 5px;
+}
+.accountPopup .email {
+  font-size: 14px;
+  margin-top: 0px;
+}
+
+.accountPopup .imgHolder {
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #747780;
+}
+.cross {
+  height: 1rem;
+  margin-left: auto;
+  background-color: #14346300;
+
+  cursor: pointer;
+}
+
+.accountPopup button {
+  width: fit-content;
+  padding: 0 16px 0 16px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: #143363;
+  color: white;
+  cursor: pointer;
+  min-width: 100px;
+  margin-top: auto;
+  margin-bottom: 30px;
+}

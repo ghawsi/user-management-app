@@ -1,4 +1,4 @@
-1. implement the css files for the app settings page and for users page.
+
 2. create a good looking tail in the app settings for the user management
 3. Design the most optimal way to hanld the registration forms.
 4. Finalize only the front end side.
@@ -6,3 +6,5 @@
 
 
 6. start working on backend
+6.1. logout button on user part of the header
+6.2. Read the users on users page and pass it to the child component as prop
