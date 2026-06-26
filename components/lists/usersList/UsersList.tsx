@@ -26,62 +26,62 @@ const user: User = {
 
 const UsersList: React.FC<{ rows: Array<object> }> = (props) => {
   const router = useRouter();
-  const { showToast } = useToast();
+  // const { showToast } = useToast();
   const lo_user = useRef<User | undefined>(user);
   const [showAlert, setShowAlert] = useState(false);
   const [userId, setUserId] = useState<string>();
   const [isEditFormOpen, setIsEditFormOpen] = useState(false);
 
-  async function handleEdit(selectedUserId: string) {
-    lo_user.current = await GetUser(selectedUserId);
-    setIsEditFormOpen(true);
-  }
+  // async function handleEdit(selectedUserId: string) {
+  //   lo_user.current = await GetUser(selectedUserId);
+  //   setIsEditFormOpen(true);
+  // }
 
-  async function handleDelete(selectedUserId: string) {
-    if ((await DeleteUser(selectedUserId)).result) {
-      showToast("User deleted successfully", "success");
-      setShowAlert(false);
-      router.push("/appSettings/users");
-      return;
-    }
-    showToast("Deletion failed", "error");
-  }
+  // async function handleDelete(selectedUserId: string) {
+  //   if ((await DeleteUser(selectedUserId)).result) {
+  //     showToast("User deleted successfully", "success");
+  //     setShowAlert(false);
+  //     router.push("/appSettings/users");
+  //     return;
+  //   }
+  //   showToast("Deletion failed", "error");
+  // }
 
-  const UsersDataTableColumns: GridColDef[] = [
-    { field: "id", headerName: "ID", width: 220 },
-    { field: "name", headerName: "Name", width: 170 },
-    { field: "email", headerName: "Email", width: 260 },
-    {
-      field: "edit",
-      headerName: "Edit",
-      width: 70,
-      sortable: false,
-      filterable: false,
-      renderCell: (params) => (
-        <IconButton Icon={EditIcon} onClick={() => handleEdit(String(params.id))} />
-      ),
-    },
-    {
-      field: "delete",
-      headerName: "Delete",
-      width: 80,
-      sortable: false,
-      filterable: false,
-      renderCell: (params) => (
-        <IconButton
-          Icon={DeleteIcon}
-          onClick={() => {
-            setUserId(String(params.id));
-            setShowAlert(true);
-          }}
-        />
-      ),
-    },
-  ];
+  // const UsersDataTableColumns: GridColDef[] = [
+  //   { field: "id", headerName: "ID", width: 220 },
+  //   { field: "name", headerName: "Name", width: 170 },
+  //   { field: "email", headerName: "Email", width: 260 },
+  //   {
+  //     field: "edit",
+  //     headerName: "Edit",
+  //     width: 70,
+  //     sortable: false,
+  //     filterable: false,
+  //     renderCell: (params) => (
+  //       <IconButton Icon={EditIcon} onClick={() => handleEdit(String(params.id))} />
+  //     ),
+  //   },
+  //   {
+  //     field: "delete",
+  //     headerName: "Delete",
+  //     width: 80,
+  //     sortable: false,
+  //     filterable: false,
+  //     renderCell: (params) => (
+  //       <IconButton
+  //         Icon={DeleteIcon}
+  //         onClick={() => {
+  //           setUserId(String(params.id));
+  //           setShowAlert(true);
+  //         }}
+  //       />
+  //     ),
+  //   },
+  // ];
 
   return (
     <>
-      {isEditFormOpen && <UserForm setIsFormOpen={setIsEditFormOpen} user={lo_user} />}
+      {/* {isEditFormOpen && <UserForm setIsFormOpen={setIsEditFormOpen} user={lo_user} />}
       <AlertDialog
         showAlert={showAlert}
         handleProceed={() => {
@@ -92,7 +92,7 @@ const UsersList: React.FC<{ rows: Array<object> }> = (props) => {
         setShowAlert={setShowAlert}
         textMessage="Do you want to delete the selected user record?"
       />
-      <DataTable ColDefinination={UsersDataTableColumns} rows={props.rows}></DataTable>
+      <DataTable ColDefinination={UsersDataTableColumns} rows={props.rows}></DataTable> */}
     </>
   );
 };

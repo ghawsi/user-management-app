@@ -1,6 +1,6 @@
-"user client";
+"use client";
 
-import classes from "./styles.module.css";
+import classes from "./Header.module.css";
 import PersonIcon from "@mui/icons-material/Person";
 import CloseIcon from "@mui/icons-material/Close";
 
@@ -22,7 +22,7 @@ const Header: React.FC<{ user: User }> = (props) => {
   const appModule = path.charAt(0).toUpperCase() + path.slice(1);
 
   return (
-    <header>
+    <header className={classes.header}>
       <p>{appModule}</p>
       <div
         className={classes.account}

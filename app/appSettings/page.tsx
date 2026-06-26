@@ -1,8 +1,8 @@
-import Link from "next/link";
+import AppTile from "@/components/common/appTile/AppTile";
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt'
 
 export default function AppSettings(){
     return (<>
-    <h2> App Settings</h2>
-    <p><Link href="/appSettings/users">User Management</Link></p>
+    <AppTile title="User Management" description="User Management" icon={<PeopleAltIcon fontSize="inherit"/>} href="/appSettings/users" size="s"/>
     </>)
 }

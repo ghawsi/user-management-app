@@ -1,0 +1,35 @@
+.regFormLayer {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: end;
+  z-index: 10;
+}
+
+.regContainer {
+  height: 100%;
+  width: 400px;
+  background-color: #d9e2fc;
+  display: flex;
+  flex-direction: column;
+  /* gap: 18px; */
+  justify-content: start;
+  align-items: center;
+}
+
+.regContainer form div {
+  width: 315px;
+  display: flex;
+  justify-content: end;
+  /* gap: 18px; */
+}
+.regContainer form div div {
+  margin-bottom: 20px;
+}
+
+.formButtons {
+  gap: 10px;
+}
