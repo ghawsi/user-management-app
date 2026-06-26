@@ -1,6 +1,4 @@
 
-2. create a good looking tail in the app settings for the user management
-3. Design the most optimal way to hanld the registration forms.
 4. Finalize only the front end side.
 5. deploy it in docker
 
@@ -8,3 +6,14 @@
 6. start working on backend
 6.1. logout button on user part of the header
 6.2. Read the users on users page and pass it to the child component as prop
+
+
+Context API is good for 
+1. Logged-in user
+2. Theme (Dark/Light mode)
+3. Language
+4. Currency
+5. Permissions
+6. Feature Flags
+7. Application Configuration
+// I think, right now it is no good option to handle forms through Context API.
