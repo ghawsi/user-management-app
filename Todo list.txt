@@ -1,11 +1,18 @@
 
-4. Finalize only the front end side.
-5. deploy it in docker
+
+Redesign the user tables with all needed fields and other tables for ANSI RBAC. 
+Create the models in draw.io
 
 
 6. start working on backend
 6.1. logout button on user part of the header
 6.2. Read the users on users page and pass it to the child component as prop
+
+
+5. deploy it in docker
+
+
+Implement a global log mechanism to handle all WH questions about the user. Or to track user activity.
 
 
 Context API is good for 
