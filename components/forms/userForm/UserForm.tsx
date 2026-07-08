@@ -1,7 +1,7 @@
 "use client";
 
 import classes from "./UserForm.module.css";
-// import { RegisterUser } from "@/lib/serverActions/userActions/RegisterUser";
+import { RegisterUser } from "@/lib/serverActions/userActions/RegisterUser";
 // import { UpdateUser } from "@/lib/serverActions/userActions/UpdateUser";
 import { useActionState, useEffect } from "react";
 
@@ -18,53 +18,55 @@ const UserForm: React.FC<{
   user?: React.RefObject<User | undefined>;
 }> = (props) => {
   const router = useRouter();
-//   const { showToast } = useToast();
-//   const [RegisterState, RegisterAction, RegisterPending] = useActionState(RegisterUser, {
-//     success: false,
-//     error: "",
-//   });
+  //   const { showToast } = useToast();
+  const [
+    UserRegistrationState,
+    UserRegistrationAction,
+    UserRegistrationIsPending,
+  ] = useActionState(RegisterUser, { success: false, error: "" });
 
-//   const [UpdateState, UpdateAction, UpdatePending] = useActionState(UpdateUser, {
-//     success: false,
-//     error: "",
-//   });
+  //   const [UpdateState, UpdateAction, UpdatePending] = useActionState(UpdateUser, {
+  //     success: false,
+  //     error: "",
+  //   });
 
-//   useEffect(() => {
-//     if (props.user) {
-//       if (UpdateState.success) {
-//         showToast("User updated successfully", "success");
-//         props.setIsFormOpen(false);
-//         router.push("/appSettings/users");
-//       }
-//       if (UpdateState.error) {
-//         showToast(`Update failed: ${UpdateState.error}`, "error");
-//       }
-//       return;
-//     }
+  //   useEffect(() => {
+  //     if (props.user) {
+  //       if (UpdateState.success) {
+  //         showToast("User updated successfully", "success");
+  //         props.setIsFormOpen(false);
+  //         router.push("/appSettings/users");
+  //       }
+  //       if (UpdateState.error) {
+  //         showToast(`Update failed: ${UpdateState.error}`, "error");
+  //       }
+  //       return;
+  //     }
 
-//     if (RegisterState.success) {
-//       showToast("User registered successfully", "success");
-//       props.setIsFormOpen(false);
-//       router.push("/appSettings/users");
-//     }
-//     if (RegisterState.error) {
-//       showToast(`Registration failed: ${RegisterState.error}`, "error");
-//     }
-//   }, [
-//     props,
-//     RegisterState,
-//     UpdateState,
-//     showToast,
-//     RegisterState.success,
-//     UpdateState.success,
-//     router,
-//   ]);
+  //     if (RegisterState.success) {
+  //       showToast("User registered successfully", "success");
+  //       props.setIsFormOpen(false);
+  //       router.push("/appSettings/users");
+  //     }
+  //     if (RegisterState.error) {
+  //       showToast(`Registration failed: ${RegisterState.error}`, "error");
+  //     }
+  //   }, [
+  //     props,
+  //     RegisterState,
+  //     UpdateState,
+  //     showToast,
+  //     RegisterState.success,
+  //     UpdateState.success,
+  //     router,
+  //   ]);
 
   return (
     <div className={classes.regFormLayer}>
       <div className={classes.regContainer}>
         {/* <form action={props.user ? UpdateAction : RegisterAction}> */}
-        <form >
+        <form action={UserRegistrationAction}>
+        
           <p>{props.user ? "Update User" : "Add new User"}</p>
           <input type="hidden" name="id" value={props.user?.current?.id} />
 
@@ -107,7 +109,12 @@ const UserForm: React.FC<{
             </>
           ) : (
             <>
-              <PasswordField id="outlined-password" name="password" label="Password" defaultValue="" />
+              <PasswordField
+                id="outlined-password"
+                name="password"
+                label="Password"
+                defaultValue=""
+              />
               <PasswordField
                 id="outlined-confirm-password"
                 name="confirmPassword"
@@ -138,7 +145,7 @@ const UserForm: React.FC<{
                 : RegisterPending
                   ? "Registering..."
                   : "Register"} */}
-                  {"Register"}
+              {"Register"}
             </Button>
           </div>
 
