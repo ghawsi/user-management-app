@@ -1,6 +1,28 @@
 
 
-Finalize the create process.
+Setup the PostgreSQL Database with needed configurations.
+Install the Prisma.
+Create the initial tables for ANSI RBAC
+Setup the connection between local app and PostgreSQL contianer.
+see if you can also do that same thing in production.
+
+create an entrypoint script to, first, do the migration, then, run the server. Use this entrypoint.sh in the dockerfile.
+
+```
+#!/bin/sh
+set -e
+
+echo "Waiting for database..."
+
+npx prisma migrate deploy
+
+echo "Starting Next.js..."
+
+exec node server.js
+```
+
+
+Finalize the create process. // test everything
 Finalize the Read process.
 Finalize the Update process.
 Finalize the disable process.
@@ -8,8 +30,8 @@ Finalize the disable process.
 Redesign the user tables with all needed fields and other tables for ANSI RBAC. 
 Create the models in draw.io
 
+When you finished the user CRUD operation, then work on login and logging
 
-6. start working on backend
 6.1. logout button on user part of the header
 6.2. Read the users on users page and pass it to the child component as prop
 
