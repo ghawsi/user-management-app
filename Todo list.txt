@@ -1,5 +1,10 @@
 
 
+Finalize the create process.
+Finalize the Read process.
+Finalize the Update process.
+Finalize the disable process.
+
 Redesign the user tables with all needed fields and other tables for ANSI RBAC. 
 Create the models in draw.io
 

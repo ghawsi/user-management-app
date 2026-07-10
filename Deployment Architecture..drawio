@@ -1,0 +1,43 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="hiDkMafUTzkefb0gy5ox">
+    <mxGraphModel dx="946" dy="603" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="KNq-GH9kpMvd-gq04460-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#0070F2;fillColor=#EBF8FF;arcSize=32;absoluteArcSize=1;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="250" width="290" x="100" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KNq-GH9kpMvd-gq04460-1" parent="1" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Docker.svg;" value="" vertex="1">
+          <mxGeometry height="41" width="50" x="110" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="KNq-GH9kpMvd-gq04460-5" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;" value="app" vertex="1">
+          <mxGeometry height="60" width="100" x="170" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="KNq-GH9kpMvd-gq04460-6" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.jumpInArrow;dy=4.58;dx=11.51;arrowHead=18.36;fillColor=#b0e3e6;strokeColor=#0e8088;rotation=15;" value="" vertex="1">
+          <mxGeometry height="90" width="220" x="270" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KNq-GH9kpMvd-gq04460-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="&amp;nbsp;Alpine Linux" vertex="1">
+          <mxGeometry height="79" width="160" x="500" y="131" as="geometry" />
+        </mxCell>
+        <mxCell id="KNq-GH9kpMvd-gq04460-15" connectable="0" parent="1" style="group;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;align=center;" value="App Server" vertex="1">
+          <mxGeometry height="42.66380236305048" width="50.16637653246414" x="590" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="KNq-GH9kpMvd-gq04460-10" parent="KNq-GH9kpMvd-gq04460-15" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.gear;" value="" vertex="1">
+          <mxGeometry height="23.200859291084853" width="23.200859291084853" x="26.965517241379303" as="geometry" />
+        </mxCell>
+        <mxCell id="KNq-GH9kpMvd-gq04460-11" parent="KNq-GH9kpMvd-gq04460-15" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.gear;" value="" vertex="1">
+          <mxGeometry height="30.9344790547798" width="30.9344790547798" y="11.729323308270693" as="geometry" />
+        </mxCell>
+        <mxCell id="KNq-GH9kpMvd-gq04460-12" parent="KNq-GH9kpMvd-gq04460-15" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#232F3D;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.gear;" value="" vertex="1">
+          <mxGeometry height="15.4672395273899" width="15.4672395273899" x="32.10344827586209" y="25.77443609022555" as="geometry" />
+        </mxCell>
+        <mxCell id="KNq-GH9kpMvd-gq04460-16" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=10;" value="db" vertex="1">
+          <mxGeometry height="60" width="100" x="170" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="KNq-GH9kpMvd-gq04460-17" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.jumpInArrow;dy=4.58;dx=11.51;arrowHead=18.36;fillColor=#b0e3e6;strokeColor=#0e8088;rotation=5;flipV=1;legacyAnchorPoints=0;" value="" vertex="1">
+          <mxGeometry height="90" width="220" x="229.99869792141095" y="319.99675714428537" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
