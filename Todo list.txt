@@ -1,6 +1,6 @@
 
 
-Setup the PostgreSQL Database with needed configurations.
+Setup the PostgreSQL Database with needed configurations. ✔️
 Install the Prisma.
 Create the initial tables for ANSI RBAC
 Setup the connection between local app and PostgreSQL contianer.
